@@ -1,0 +1,1 @@
+web gunicorn iFarm.wsgi:application --log-file -
