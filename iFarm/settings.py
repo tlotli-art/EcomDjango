@@ -27,7 +27,7 @@ SECRET_KEY = '*n6d+38pqx$5s5kr+1mb=^u7(lr&1g6ql+vuy@4q*s(v2d-!=s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ecom-ifarm.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['tlotli-ifarm.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
