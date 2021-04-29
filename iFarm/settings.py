@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*n6d+38pqx$5s5kr+1mb=^u7(lr&1g6ql+vuy@4q*s(v2d-!=s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['tlotli-ifarm.herokuapp.com', '127.0.0.1']
 
@@ -120,6 +120,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -135,3 +137,4 @@ MEDIA_URL = '/images/'
 
 #Media_root to set the path for all media files that will be uploaded
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
